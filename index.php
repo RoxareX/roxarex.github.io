@@ -13,10 +13,8 @@ switch($route) {
     require_once __DIR__ . "/calculate/calculate.html";
   break;
 
-  case "/kauppa":
-    require_once __DIR__ . "/dist/index.html";
-  break;
-
+  default:
+    echo "404";
 }
 
 ?>
