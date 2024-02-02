@@ -14,11 +14,9 @@ switch($route) {
   break;
 
   case "/kauppa":
-    require_once __DIR__ . "/fanikauppa/dist/index.html";
+    require_once __DIR__ . "/dist/index.html";
   break;
 
-  default:
-    echo "404";
 }
 
 ?>
