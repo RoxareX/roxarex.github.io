@@ -13,7 +13,7 @@ switch($route) {
     require_once __DIR__ . "/calculate.html";
   break;
 
-  case "/fanikauppa":
+  case "/fanikauppa/":
     require_once __DIR__ . "/fanikauppa/dist/index.html";
   break;
 

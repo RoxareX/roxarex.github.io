@@ -11321,7 +11321,18 @@ section.resume-section .resume-section-content {
 @media (max-width: 992px) {
   .navbaritem1 {
     top: 17px;
-    left: 45%;
+    left: 50%;
+    color: #000;
+    position: fixed;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    display: inline !important;
+  }
+  .navbaritem2 {
+    top: 17px;
+    left: 35%;
     color: #000;
     position: fixed;
     text-decoration: none;
@@ -11332,5 +11343,8 @@ section.resume-section .resume-section-content {
   }
 }
 .navbaritem1 {
+  display: none;
+}
+.navbaritem2 {
   display: none;
 }
