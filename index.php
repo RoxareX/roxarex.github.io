@@ -14,7 +14,7 @@ switch($route) {
   break;
 
   case "/shop":
-    require_once __DIR__ . "/shop/index.html";
+    require_once __DIR__ . "/fanikauppa/dist/index.html";
   break;
 
   default:
