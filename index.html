@@ -1,273 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
-        
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-      
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbaritem1" href="/calculate/calculate.html">Calculator</a>
-            <a class="navbaritem2" href="/dist/index.html">Fanikauppa</a>
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Márk Ticzer</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Mark Ticzer</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa-github {
+            font-size: 45px;
+        }
+        .ti-instagram {
+            font-size: 40px;
+        }
+        .fa-linkedin{
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="calculate/calculate.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i
+            class="ti-shift-left-alt"></i> Calculator</a>
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/RoxareX"><i class="fa fa-github"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="header-content">
+                <h4 class="header-subtitle">Hello, I am</h4>
+                <h1 class="header-title">Márk Ticzer</h1>
+                <h6 class="header-mono">Fullstack | Game Developer</h6>
+                <!-- <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button> -->
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Mark Ticzer</h5>
+                        <div class="brand-subtitle">Web | Game Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Márk
-                        <span class="text-primary">Ticzer</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        <a href="mailto:ticermark@gmail.com">ticermark@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">I am capable of learning new things fast. I am more than willing to help anyone in need and can provide solutions, working in group and cooperating is one of my skills as well.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://fi.linkedin.com/in/m%C3%A1rk-ticzer-99628427b"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/RoxareX"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://twitter.com/McMark912"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/ticzer_mark/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Cadmandata Oy</h3>
-                            <div class="subheading mb-3">Software/Web developer - IT-Person</div>
-                            <p>Started as on-the-job training then, continued to part time working.</p><br>
-                            <div>Used For development:</div>
-                            <p>AWS - WordPress - Grav - Linux</p>
-                            <div>Languages:</div>
-                            <p>HTML - CSS - JavaScript - Python - Shell scripting</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2023 - May 2024</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Tampere Vocational College Tredu</h3>
-                            <div class="subheading mb-3">Basic Degree in Information and Communication Technology</div>
-                            <div>Computer Science - Web Development</div>
-                            <p>GPA: None</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2022 - May 2025</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Tesoma School</h3>
-                            <div class="subheading mb-3">Primary school</div>
-                            <p>Science and Mathematics Specialization (LUMA)</p>
-                            <p>GPA: 7.1	Acceptable, Satisfactory (Tyydyttävä)</p>
-                            <h4>Award</h4>
-                            <p><i class="fas fa-trophy text-warning"></i>Scholarship for learning Python programming</p>
-                            <a href="/../assets/img/M.T_stipendi_python.pdf">Attachment</a>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2016 - May 2022</span></div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Web/Game Developer </h5>
+                <p class="mt-20">I am a junior web and game developer eager to learn and grow in the field. I have basic
+                    knowledge of front-end and back-end technologies and am enthusiastic about building applications
+                    that are both functional and visually appealing.</p>
+                <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 14/06/2005</li>
+                    <li><span>Email</span> : ticzermark@gmail.com</li>
+                    <li><span>Phone</span> : + (358) 45 6423355</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/RoxareX"><i class="fa fa-github"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Game Development</h6>
+                        <p class="subtitle">Creating immersive and interactive gaming experiences using various game
+                            engines and technologies.</p>
+                        <hr>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <p class="subtitle">Building responsive and dynamic websites using modern web technologies and
+                            frameworks.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Databases</h6>
+                        <p class="subtitle">Basic knowledge of database management and SQL for storing and retrieving
+                            data.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <div style="display: flex;">
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="edf2f719-7be4-491f-97e1-c42ca8e94a4e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/../assets/utilities/embed.js"></script>
-                        <a href="https://eu.api.accredible.com/v1/frontend/credential_website_embed_image/certificate/8046927"><img style="height: 280px; border: grey 1px solid; margin-left: 10px;" src="https://eu.api.accredible.com/v1/frontend/credential_website_embed_image/certificate/8046927" alt=""></a>
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Expertise</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">October 2023 - May 2024</h6>
+                            <p>Software/Web Developer - IT-Person</p>
+                            <p class="subtitle">Started as on-the-job training then, continued to part time working.</p>
+                            <p class="subtitle">Used For development: AWS - WordPress - Grav - Linux</p>
+                            <p class="subtitle">Languages: HTML - CSS - JavaScript - Python - Shell scripting</p>
+                            </div>
                     </div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="devicon-csharp-plain"></i></li>
-                        <li class="list-inline-item"><i class="devicon-unity-original"></i></li>
-                        <li class="list-inline-item"><i class="devicon-blender-original"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="devicon-linux-plain"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="devicon-php-plain"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="devicon-mysql-plain-wordmark"></i></li>
-                    </ul>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I learnt how to make games as well. I always try to improve my skills, for example when making games i do the modeling and the drawings myself. Basically when making something I want to make it completely original if it was my idea.</p>
-                    <p class="mb-0">In my freetime i mostly use the computer. To either play games or try to improve on coding and 3D modeling.</p>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Portfolio-->
-            <section class="resume-section" id="portfolio">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Portfolio</h2>
-                    <h3 class="mb-4">Websites</h3>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://tapahtumat.ticmar23.treok.io">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/ht2-1.png" alt="Portfolio Image 1">
-                                </a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://tapahtumat.ticmar23.treok.io">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/ht2-6.png" alt="Portfolio Image 2">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://martic22keikkainfo2.node.treok.io/">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/keikkainfo-1.png" alt="Portfolio Image 3">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://martic22keikkainfo2.node.treok.io/">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/keikkainfo-2.png" alt="Portfolio Image 4">
-                                </a>
-                            </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">August 2022 - May 2025</h6>
+                            <p>Tampere Vocational College Tredu</p>
+                            <p class="subtitle">Basic Degree in Information and Communication Technology</p>
+                            <p class="subtitle">Computer Science - Web Development</p>
+                            <hr>
+                            <h6 class="title text-danger">August 2016 - May 2022</h6>
+                            <p>Tesoma School</p>
+                            <p class="subtitle">Primary School</p>
+                            <p class="subtitle">Science and Mathematics Specialization (LUMA)</p>
+                            <hr>
+                            <h6>AWARD</h6>
+                            <span class="line"></span>
+                            <a href="assets/M.T_stipendi_python.pdf">Attachment</a>
+                            <p>Scholarship for learning Python programming</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://roxarex.github.io/dist/index.html">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/fanikauppa-1--.png" alt="Portfolio Image 3">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="mb-4">Games</h3>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/game1-1.png" alt="Portfolio Image 5">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/game1-2.png" alt="Portfolio Image 6">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/game1-3.png" alt="Portfolio Image 7">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/Python_Games/tree/Platformer">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/game2-1.png" alt="Portfolio Image 8">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/Python_Games/tree/Platformer">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/game2-2.png" alt="Portfolio Image 9">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/Python_Games/tree/Platformer">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/game2-3.png" alt="Portfolio Image 10">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="mb-4">Apps</h3>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/WoodCalculator">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/app1-3.png" alt="Portfolio Image 11">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/RoxareX/WoodCalculator">
-                                    <img class="portfolio-img img-fluid" src="../assets/img/app1-4.png" alt="Portfolio Image 12">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add your game images here -->
                 </div>
-            </section>
-            
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>C#</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
+                                    aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Unity</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Blender</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Github</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Linux</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>JavaScript</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>React</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>HTML</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 92%"
+                                    aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>CSS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 74%"
+                                    aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>AWS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>WordPress</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>MySQL</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 55%"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>Hungarian</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Finnish</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        New
+                    </a>
+                    <a href="#" data-filter=".web">
+                        Websites
+                    </a>
+                    <a href="#" data-filter=".game">
+                        Games
+                    </a>
+                    <a href="#" data-filter=".app">
+                        Apps
+                    </a>
+                </div>
+                <div class="portfolio-container">
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/web-1.png">
+                                <img src="assets/imgs/web-1.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://tapahtumat.ticmar23.treok.io">
+                                    <div class="text-holder">
+                                        <h6 class="title">WEB</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/web-2.png">
+                                <img src="assets/imgs/web-2.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://martic22keikkainfo2.node.treok.io">
+                                    <div class="text-holder">
+                                        <h6 class="title">WEB</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/app-1.png">
+                                <img src="assets/imgs/app-1.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                    <div class="text-holder">
+                                        <h6 class="title">ADVERSTISING</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/web-1-2.png">
+                                <img src="assets/imgs/web-1-2.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://tapahtumat.ticmar23.treok.io">
+                                    <div class="text-holder">
+                                        <h6 class="title">WEB</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 app">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/app-1-2.png">
+                                <img src="assets/imgs/app-1-2.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                    <div class="text-holder">
+                                        <h6 class="title">APPS</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/web-3.png">
+                                <img src="assets/imgs/web-3.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://roxarex.github.io/dist/index.html">
+                                    <div class="text-holder">
+                                        <h6 class="title">WEB</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/app-1-3.png">
+                                <img src="assets/imgs/app-1-3.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                    <div class="text-holder">
+                                        <h6 class="title">APPS</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/app-1-4.png">
+                                <img src="assets/imgs/app-1-4.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                    <div class="text-holder">
+                                        <h6 class="title">app</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 game new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/game-1.png">
+                                <img src="assets/imgs/game-1.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
+                                    <div class="text-holder">
+                                        <h6 class="title">GAMES</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 game">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/game-1-2.png">
+                                <img src="assets/imgs/game-1-2.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
+                                    <div class="text-holder">
+                                        <h6 class="title">game</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 game">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/game-1-3.png">
+                                <img src="assets/imgs/game-1-3.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
+                                    <div class="text-holder">
+                                        <h6 class="title">game</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 game new">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/game-2.png">
+                                <img src="assets/imgs/game-2.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Platformer">
+                                    <div class="text-holder">
+                                        <h6 class="title">game</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 game">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/game-2-2.png">
+                                <img src="assets/imgs/game-2-2.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Platformer">
+                                    <div class="text-holder">
+                                        <h6 class="title">game</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 game">
+                        <div class="portfolio-item">
+                            <a href="assets/imgs/game-2-3.png">
+                                <img src="assets/imgs/game-2-3.png" class="img-fluid"
+                                    alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            </a>
+                            <div class="content-holder">
+                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Platformer">
+                                    <div class="text-holder">
+                                        <h6 class="title">game</h6>
+                                        <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+
+    <div class="section contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">ticzermark@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/RoxareX"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
+                                        aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Created With <i
+                    class="ti-heart text-danger"></i> By <a href="http://roxarex.github.io" target="_blank"><span
+                        class="text-danger" title="Still my webiste :D">Mark Ticzer</span></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google mpas -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+
 </html>
