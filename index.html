@@ -16,10 +16,12 @@
         .fa-github {
             font-size: 45px;
         }
+
         .ti-instagram {
             font-size: 40px;
         }
-        .fa-linkedin{
+
+        .fa-linkedin {
             font-size: 45px;
         }
     </style>
@@ -31,18 +33,20 @@
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                <li class="social-item"><a class="social-link text-light"
+                        href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
                             aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/RoxareX"><i class="fa fa-github"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/RoxareX"><i
+                            class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light"
+                        href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
                             aria-hidden="true"></i></a></li>
             </ul>
             <div class="header-content">
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Márk Ticzer</h1>
                 <h6 class="header-mono">Fullstack | Game Developer</h6>
-                <!-- <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button> -->
+                <button onclick="window.location.href='assets/mark_ticzer.pdf'" class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </header>
@@ -92,7 +96,9 @@
                 <p class="mt-20">I am a junior web and game developer eager to learn and grow in the field. I have basic
                     knowledge of front-end and back-end technologies and am enthusiastic about building applications
                     that are both functional and visually appealing.</p>
-                <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
+                    <a href="assets/mark_ticzer.pdf" download class="btn btn-outline-danger">
+                        <i class="icon-down-circled2"></i>Download My CV
+                    </a>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -103,11 +109,12 @@
                     <li><span>Phone</span> : + (358) 45 6423355</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
-                                aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/RoxareX"><i class="fa fa-github"
-                                aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/ticzer_mark/"><i
+                                class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/RoxareX"><i
+                                class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link"
+                            href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
                                 aria-hidden="true"></i></a></li>
                 </ul>
             </div>
@@ -160,11 +167,12 @@
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">October 2023 - May 2024</h6>
-                            <p>Software/Web Developer - IT-Person</p>
+                            <h5><b>CADMANDATA OY</b></h5>
+                            <p><b>Software/Web Developer - IT-Person</b></p>
                             <p class="subtitle">Started as on-the-job training then, continued to part time working.</p>
-                            <p class="subtitle">Used For development: AWS - WordPress - Grav - Linux</p>
-                            <p class="subtitle">Languages: HTML - CSS - JavaScript - Python - Shell scripting</p>
-                            </div>
+                            <p class="subtitle">Used For development: <b>AWS - WordPress - Grav - Linux</b></p>
+                            <p class="subtitle">Languages: <b>HTML - CSS - JavaScript - Python - Shell scripting</b></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -177,14 +185,14 @@
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">August 2022 - May 2025</h6>
-                            <p>Tampere Vocational College Tredu</p>
+                            <h5><b>Tampere Vocational College Tredu</b></h5>
                             <p class="subtitle">Basic Degree in Information and Communication Technology</p>
-                            <p class="subtitle">Computer Science - Web Development</p>
+                            <p class="subtitle"><b>Computer Science - Web Development</b></p>
                             <hr>
                             <h6 class="title text-danger">August 2016 - May 2022</h6>
-                            <p>Tesoma School</p>
+                            <h5><b>Tesoma School</b></h5>
                             <p class="subtitle">Primary School</p>
-                            <p class="subtitle">Science and Mathematics Specialization (LUMA)</p>
+                            <p class="subtitle"><b>Science and Mathematics Specialization (LUMA)</b></p>
                             <hr>
                             <h6>AWARD</h6>
                             <span class="line"></span>
@@ -269,6 +277,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-header">
                             <div class="pull-left">
@@ -291,6 +301,30 @@
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Awards</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div style="display: flex; flex-direction: row;">
+                                <div data-iframe-width="100" data-iframe-height="270"
+                                    data-share-badge-id="edf2f719-7be4-491f-97e1-c42ca8e94a4e"
+                                    data-share-badge-host="https://www.credly.com"></div>
+                                <script type="text/javascript" async
+                                    src="//cdn.credly.com/../assets/utilities/embed.js"></script>
+                                <a
+                                    href="https://eu.api.accredible.com/v1/frontend/credential_website_embed_image/certificate/8046927"><img
+                                        style="height: 150px; border: grey 1px solid; margin-left: 10px;"
+                                        src="https://eu.api.accredible.com/v1/frontend/credential_website_embed_image/certificate/8046927"
+                                        alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -328,8 +362,8 @@
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/game-3.png">
                                     <div class="text-holder">
-                                        <h6 class="title">WEB</h6>
-                                        <p class="subtitle">Custom PHP made website from school</p>
+                                        <h6 class="title">VR PROJECT</h6>
+                                        <p class="subtitle">A game where you can learn like in the real world</p>
                                     </div>
                                 </a>
                             </div>
@@ -344,8 +378,8 @@
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/game-3-2.png">
                                     <div class="text-holder">
-                                        <h6 class="title">WEB</h6>
-                                        <p class="subtitle">Custom PHP made website from school</p>
+                                        <h6 class="title">VR PROJECT</h6>
+                                        <p class="subtitle">A game where you can learn like in the real world</p>
                                     </div>
                                 </a>
                             </div>
@@ -360,8 +394,8 @@
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/game-3-3.png">
                                     <div class="text-holder">
-                                        <h6 class="title">WEB</h6>
-                                        <p class="subtitle">Custom PHP made website from school</p>
+                                        <h6 class="title">VR PROJECT</h6>
+                                        <p class="subtitle">A game where you can learn like in the real world</p>
                                     </div>
                                 </a>
                             </div>
@@ -376,8 +410,8 @@
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/game-3-4.png">
                                     <div class="text-holder">
-                                        <h6 class="title">WEB</h6>
-                                        <p class="subtitle">Custom PHP made website from school</p>
+                                        <h6 class="title">VR PROJECT</h6>
+                                        <p class="subtitle">A game where you can learn like in the real world</p>
                                     </div>
                                 </a>
                             </div>
@@ -518,7 +552,8 @@
                                     alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             </a>
                             <div class="content-holder">
-                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
+                                <a class="img-popup"
+                                    href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
                                     <div class="text-holder">
                                         <h6 class="title">GAMES</h6>
                                         <p class="subtitle">Was having fun at school</p>
@@ -534,7 +569,8 @@
                                     alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             </a>
                             <div class="content-holder">
-                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
+                                <a class="img-popup"
+                                    href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
                                     <div class="text-holder">
                                         <h6 class="title">game</h6>
                                         <p class="subtitle">Was having fun at school</p>
@@ -550,7 +586,8 @@
                                     alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             </a>
                             <div class="content-holder">
-                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
+                                <a class="img-popup"
+                                    href="https://github.com/RoxareX/Python_Games/tree/Skyline-Defender">
                                     <div class="text-holder">
                                         <h6 class="title">game</h6>
                                         <p class="subtitle">Was having fun at school</p>
@@ -625,7 +662,8 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span></h6>
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span>
+                                </h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -633,15 +671,19 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">ticzermark@gmail.com</span></h6>
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">ticzermark@gmail.com</span>
+                                </h6>
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
                                         aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/RoxareX"><i class="fa fa-github"
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://github.com/RoxareX"><i class="fa fa-github"
                                         aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
                                         aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
