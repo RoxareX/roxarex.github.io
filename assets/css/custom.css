@@ -1,0 +1,36 @@
+.awards-column {
+    display: flex; 
+    flex-direction: row; 
+    height: 385px; 
+    justify-content: center;
+}
+
+.awards-container {
+    display: flex;
+    flex-direction: row; 
+    align-self: center;
+}
+
+.awards-image {
+    height: 100%;
+}
+
+.awards-image-container {
+    height: 175px; 
+    margin-left: -15px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .awards-image-container {
+        height: 155px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    .awards-image-container {
+        height: 275px;
+    }
+}
