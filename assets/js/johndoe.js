@@ -31,31 +31,6 @@ $(document).ready(function(){
     });
 });
 
-// protfolio filters
-$(window).on("load", function() {
-    var t = $(".portfolio-container");
-    t.isotope({
-        filter: ".new",
-        animationOptions: {
-            duration: 750,
-            easing: "linear",
-            queue: !1
-        }
-    }), $(".filters a").click(function() {
-        $(".filters .active").removeClass("active"), $(this).addClass("active");
-        var i = $(this).attr("data-filter");
-        return t.isotope({
-            filter: i,
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: !1
-            }
-        }), !1
-    });
-});
-
-
 // google maps
 function initMap() {
 // Styles a map in night mode.
@@ -148,3 +123,35 @@ function initMap() {
       ]
     });
 }
+
+// Change background color based on scroll position
+$(document).ready(function () {
+    const portfolioBackground = $('.portfolio-background');
+    const sections = {
+        gameProjects: $('#portfolio'), // Game Projects section
+        webProjects: $('#web-projects'), // Web Projects section (add this ID in HTML)
+        appProjects: $('#app-projects') // App Projects section (add this ID in HTML)
+    };
+
+    $(window).on('scroll', function () {
+        const scrollMiddle = $(window).scrollTop() + $(window).height() / 2;
+
+        if (scrollMiddle >= sections.appProjects.offset().top) {
+            portfolioBackground.css('background-color', 'darkgreen');
+        } else if (scrollMiddle >= sections.webProjects.offset().top) {
+            portfolioBackground.css('background-color', 'darkorange');
+        } else if (scrollMiddle >= sections.gameProjects.offset().top) {
+            portfolioBackground.css('background-color', 'darkblue');
+        } else {
+            portfolioBackground.css('background-color', 'black');
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('.portfolio-container').each(function () {
+        if ($(this).children('.portfolio-item-container').length === 1) {
+            $(this).addClass('single-item'); // Add class if only one item exists
+        }
+    });
+});

@@ -1,3 +1,7 @@
+body {
+    background-color: unset;
+}
+
 .awards-column {
     display: flex; 
     flex-direction: row; 
@@ -20,6 +24,109 @@
     margin-left: -15px;
 }
 
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items if there's only one */
+    gap: 20px; /* Add spacing between items */
+}
+
+.portfolio-container .portfolio-item {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.portfolio-container.single-item .portfolio-item-container {
+    flex: 1 1 50%; /* Keep the single item size adjustment */
+    max-width: 50%;
+    transition: none; /* Remove the smooth transition */
+}
+
+.portfolio-container.single-item .portfolio-item-container:hover {
+    transform: none; /* Remove the zoom-in effect */
+}
+
+.portfolio-item-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the image */
+    flex: 1 1 calc(33.333% - 20px); /* Allow items to take up 1/3 of the row minus the gap */
+    max-width: calc(33.333% - 20px); /* Ensure items don't exceed 1/3 of the row */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.tech-boxes {
+    display: flex;
+}
+
+.tech-box {
+    padding: 3px 7px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.tech-box.unity {
+    background-color: #6a0dad; /* Purple */
+}
+
+.tech-box.blender {
+    background-color: #af4600; /* Orange */
+}
+
+.tech-box.csharp {
+    background-color: #0078d7; /* Blue */
+}
+
+.desc-text {
+    display: flex;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+    word-wrap: break-word;
+    max-width: 500px;
+}
+
+.portfolio-background {
+    background-color: black; /* Default color */
+    transition: background-color 1.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Slower and smoother transition */
+}
+
+.title-line {
+    display: block;
+    height: 2px;
+    margin: 10px auto;
+    width: 50px;
+}
+
+.game-color {
+    color: skyblue;
+}
+.web-color {
+    color: darkorange;
+}
+.app-color {
+    color: darkgreen;
+}
+
+.game-line {
+    background-color: skyblue;
+}
+
+.web-line {
+    background-color: darkorange;
+}
+
+.app-line {
+    background-color: darkgreen;
+}
+
+.contact {
+    background-color: white; /* Set a fixed background color for the contacts section */
+}
+
 @media screen and (max-width: 1200px) {
     
     .awards-image-container {
@@ -32,5 +139,30 @@
     
     .awards-image-container {
         height: 275px;
+    }
+
+    .portfolio-item-container {
+        flex: 1 1 calc(50% - 20px); /* Adjust to 2 items per row on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio-item-container {
+        flex: 1 1 100%; /* Full width for small screens */
+        max-width: 100%;
+    }
+
+    .awards-image-container {
+        height: 125px; /* Reduce height for smaller screens */
+    }
+
+    .awards-image {
+        height: 100%; /* Ensure the image scales properly */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    .portfolio-item-container {
+        margin-bottom: 100px; /* Add spacing between portfolio containers */
     }
 }
