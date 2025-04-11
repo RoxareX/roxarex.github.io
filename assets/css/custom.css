@@ -81,7 +81,7 @@ body {
 }
 
 .desc-text {
-    display: flex;
+    display: block;
     color: white;
     font-size: 1rem;
     margin-top: 10px;
