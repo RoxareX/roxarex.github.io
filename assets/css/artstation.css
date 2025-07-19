@@ -1,0 +1,150 @@
+:root {
+    --link-color: #13aff0;
+    --link-color-darker: #0c8ec4;
+    --border-color: #383838;
+    --border-color-lighter: #454545;
+    --subtitle-color: #f1f1f1;
+    --site-title-color: #ffffff;
+    --site-title-color-darkest: #cccccc;
+    --page-title-color: #fff;
+    --body-bg: #101014;
+    --body-bg-rgb: 16, 16, 20;
+    --body-bg-lighter: #272730;
+    --body-bg-darker: #050506;
+    --body-bg-darkest: black;
+    --body-color: #bbbbbb;
+    --body-color-rgb: 187, 187, 187;
+    --body-color-darkest: #888888;
+    --header-bg: #000000;
+    --header-bg-rgb: 0, 0, 0;
+    --header-bg-darker: black;
+    --nav-album-bg: #18181C;
+    --footer-bg: #18181C;
+    --footer-text-color: #bbbbbb;
+    --lib-perfect-scrollbar-bg: #393947;
+    --component-notify-bg: #272730;
+    --lightness-body-5: #1b1b22;
+    --lightness-body-10: #272730;
+    --font-family-primary: 'Inter', Helvetica, Arial, sans-serif;
+    --font-family-secondary: 'Inter', Helvetica, Arial, sans-serif;
+}
+
+.artstation-portfolio {
+    padding: 40px;
+    background-color: #101014; /* Dark background */
+}
+
+.section {
+    padding: 0;
+}
+
+section {
+    background-color: #18181C;
+}
+
+.album-grid {
+    padding-right: 0.0625rem;
+}
+
+.row, .site-row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 64em) {
+    .album-grid .col-desktop-3 {
+        max-width: 20%;
+        flex-basis: 20%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 64em) {
+    .col-desktop-3 {
+        max-width: 25%;
+        flex-basis: 25%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 48em) {
+    .col-tablet-4 {
+        max-width: 33.3333333333%;
+        flex-basis: 33.3333333333%;
+        padding: 0;
+    }
+}
+
+.col-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+.album-grid-item {
+    padding-left: 0.0625rem;
+    padding-top: 0.0625rem;
+    position: relative;
+}
+
+.album-grid-item a {
+    vertical-align: top;
+}
+
+a, .active a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95);
+}
+
+a {
+    background-color: transparent;
+}
+
+.album-grid-item .img-fluid {
+    width: 100%;
+    vertical-align: top;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+}
+
+img {
+    border-style: none;
+}
+
+.album-grid-item-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0.7));
+    transition: opacity .3s linear;
+}
+
+.album-grid-item:hover .album-grid-item-overlay {
+    opacity: 1;
+}
+
+.album-grid-item-overlay-inner {
+    position: absolute;
+    padding: 1.3125rem 2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.album-grid-item-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5rem;
+    overflow-wrap: break-word;
+}

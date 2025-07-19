@@ -11447,6 +11447,7 @@ pre .code {
   transition: 1s;
   -weblit-transition: 1s;
   z-index: 1;
+  padding-left: 55px;
 }
 
 .navbar .brand .brand-txt .brand-subtitle {

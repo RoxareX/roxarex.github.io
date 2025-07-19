@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="If developer help is needed you came to the right person">
+    <meta name="author" content="RoxareX">
+    <title>Mark Ticzer</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/artstation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa-github {
+            font-size: 45px;
+        }
+
+        .ti-instagram {
+            font-size: 40px;
+        }
+
+        .fa-linkedin {
+            font-size: 45px;
+        }
+
+        /* Filter buttons styles */
+        .filter-buttons {
+            padding: 40px 0;
+            display: flex;
+            place-content: space-around;
+        }
+
+        .filter-btn {
+            background-color: transparent;
+            border: none;
+            color: #007bff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 36px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .filter-btn:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .filter-btn.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .filter-btn:focus {
+            outline: none;
+        }
+
+        .sketchfab-link {
+            width: fit-content;
+            padding: 20px;
+            margin-top: 50px;
+            display: block;
+            border-radius: 5px;
+            border: 1px solid #007bff;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="calculate/calculate.html" class="btn btn-primary btn-component affix" data-offset-top="600"><i
+            class="ti-shift-left-alt"></i> Calculator</a>
+
+    <!--Navigation-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white affix" data-offset-top="510">
+        <div class="container" id="navbar-container"></div>
+    </nav>
+
+
+
+    <!-- Filter Section -->
+    <div class="portfolio-background">
+        <div class="container">
+            <div class="text-center">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="showProjects()">3D Projects</button>
+                    <div style="width: 1px; border: #007bff solid 1px;"></div>
+                    <button class="filter-btn" onclick="showModels()">3D Models</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section class="section" id="portfolio">
+
+            <!-- artstation imported content appears here -->
+
+        </section>
+        <!-- End of portfolio section -->
+
+        <!-- 3D Models Section -->
+        <section class="section" id="3dmodels" style="display: none;">
+            <div class="container">
+                <h2 class="text-center mb-5 pt-5 text-light">3D Models</h2>
+                <!-- 3D models content will go here -->
+                <div class="col-12" style="place-items: center; padding-bottom: 50px;">
+                    <p style="font-size: 20px;" class="text-center text-muted">3D Models view isn't available yet - View
+                        all my models here
+                        instead</p>
+                    <a class="sketchfab-link" href="https://sketchfab.com/RoxareX">View all my models on Sketchfab</a>
+                </div>
+            </div>
+        </section>
+        <!-- End of 3D models section -->
+
+
+        <div class="section contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="contact-info-card">
+                            <h4 class="contact-title">Get in touch</h4>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-mobile icon-md"></i>
+                                </div>
+                                <div class="col-10 ">
+                                    <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-envelope icon-md"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="d-inline">Email :<br> <span
+                                            class="text-muted">ticzermark@gmail.com</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <ul class="social-icons pt-4">
+                                <li class="social-item"><a class="social-link text-dark"
+                                        href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark"
+                                        href="https://github.com/RoxareX"><i class="fa fa-github"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark"
+                                        href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i
+                                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer py-3">
+            <div class="container">
+                <p class="small mb-0 text-light">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Created With <i
+                        class="ti-heart text-danger"></i> By <a href="http://roxarex.github.io" target="_blank"><span
+                            class="text-danger" title="Still my webiste :D">Mark Ticzer</span></a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- core  -->
+        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+        <!-- bootstrap 3 affix -->
+        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+        <!-- Isotope  -->
+        <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+        <!-- Google mpas -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+        <!-- JohnDoe js -->
+        <script src="assets/js/johndoe.js"></script>
+
+        <!-- Loaders JS -->
+        <script src="assets/js/loaders.js"></script>
+
+        <!-- Filter functionality -->
+        <script>
+            function showProjects() {
+                // Show portfolio section
+                document.getElementById('portfolio').style.display = 'block';
+                // Hide 3D models section
+                document.getElementById('3dmodels').style.display = 'none';
+
+                // Update button states
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            }
+
+            function showModels() {
+                // Hide portfolio section
+                document.getElementById('portfolio').style.display = 'none';
+                // Show 3D models section
+                document.getElementById('3dmodels').style.display = 'block';
+
+                // Update button states
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            }
+        </script>
+
+</body>
+
+</html>

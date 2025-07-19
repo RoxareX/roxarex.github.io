@@ -130,7 +130,8 @@ $(document).ready(function () {
     const sections = {
         gameProjects: $('#portfolio'), // Game Projects section
         webProjects: $('#web-projects'), // Web Projects section (add this ID in HTML)
-        appProjects: $('#app-projects') // App Projects section (add this ID in HTML)
+        appProjects: $('#app-projects'), // App Projects section (add this ID in HTML)
+        threeDModels: $('#3dmodels') // 3D Models section
     };
 
     $(window).on('scroll', function () {
@@ -142,6 +143,8 @@ $(document).ready(function () {
             portfolioBackground.css('background-color', 'darkorange');
         } else if (scrollMiddle >= sections.gameProjects.offset().top) {
             portfolioBackground.css('background-color', 'darkblue');
+        } else if (scrollMiddle >= sections.threeDModels.offset().top) {
+            portfolioBackground.css('background-color', 'blue');
         } else {
             portfolioBackground.css('background-color', 'black');
         }

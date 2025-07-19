@@ -25,6 +25,10 @@
         .fa-linkedin {
             font-size: 45px;
         }
+
+        a {
+            color: gray;
+        }
     </style>
 </head>
 
@@ -47,48 +51,18 @@
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Márk Ticzer</h1>
                 <h6 class="header-mono">Fullstack | Game Developer</h6>
-                <button onclick="window.location.href='assets/mark_ticzer.pdf'" class="btn btn-primary btn-rounded"><i
+                <button onclick="window.location.href='assets/mark_ticzer_CV_2025.pdf'" class="btn btn-primary btn-rounded"><i
                         class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </header>
+
+    <!--Navigation-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Mark Ticzer</h5>
-                        <div class="brand-subtitle">Web | Game Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container" id="navbar-container">
         </div>
     </nav>
+
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
@@ -98,7 +72,7 @@
                 <p class="mt-20">I am a junior web and game developer eager to learn and grow in the field. I have basic
                     knowledge of front-end and back-end technologies and am enthusiastic about building applications
                     that are both functional and visually appealing.</p>
-                <a href="assets/mark_ticzer.pdf" download class="btn btn-outline-danger">
+                <a href="assets/mark_ticzer_CV_2025.pdf" download class="btn btn-outline-danger">
                     <i class="icon-down-circled2"></i>Download My CV
                 </a>
             </div>
@@ -114,7 +88,7 @@
                     <li class="social-item"><a class="social-link" href="https://www.instagram.com/ticzer_mark/"><i
                                 class="ti-instagram" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link" href="https://github.com/RoxareX"><i
-                                class="fa fa-github" aria-hidden="true"></i></a></li>
+                                class="fa fa-github"></i></a></li>
                     <li class="social-item"><a class="social-link"
                             href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
                                 aria-hidden="true"></i></a></li>
@@ -172,13 +146,15 @@
                             <h5><b>Virtual Dawn</b></h5>
                             <p><b>Game Development</b></p>
                             <p class="subtitle">Started as on-the-job training.</p>
-                            <p class="subtitle">Participated in a new company project, working on the player movement as well as the
+                            <p class="subtitle">Participated in a new company project, working on the player movement as
+                                well as the
                                 as the all the animations for the player. Also made tilesets for game environment.</p>
-                            <p class="subtitle">Used For development: <b>Unity - Blender - Photoshop - Stable Diffusion</b></p>
+                            <p class="subtitle">Used For development: <b>Unity - Blender - Photoshop - Stable
+                                    Diffusion</b></p>
                             <p class="subtitle">Languages: <b>C#</b></p>
                             <hr>
                             <h6 class="title text-danger">May 2024 - Dec 2024</h6>
-                            <h5><b>SmartHome Game Project</b></h5>
+                            <h5><b><a style="color: blue; text-decoration: underline;" href="https://sidequestvr.com/app/40197/treducare">TreduCare</a> Game Project</b></h5>
                             <p><b>Game Development</b></p>
                             <!-- <p class="subtitle">Developed a VR game for learning purposes and for others to learn.</p> -->
                             <p class="subtitle">Participated in a customer project, working in game development as the
@@ -216,8 +192,8 @@
                             <hr>
                             <h6>AWARD</h6>
                             <span class="line"></span>
-                            <a class="game-color" href="assets/awards/M.T_stipendi_python.pdf">Attachment here</a> and at <a
-                               class="game-color" href="#awards">Awards</a>
+                            <a class="game-color" href="assets/awards/M.T_stipendi_python.pdf">Attachment here</a> and
+                            at <a class="game-color" href="#awards">Awards</a>
                             <p>Scholarship for learning Python programming</p>
                         </div>
                     </div>
@@ -246,11 +222,6 @@
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
                                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Python</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
                             <h6>Github</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
@@ -259,14 +230,39 @@
                             <h6>Linux</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
                                     aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Java</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>JavaScript</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
                                     aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <h6>TypeScript</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>PHP</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                             <h6>React</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Vite</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
                                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
@@ -360,7 +356,7 @@
             <h2 class="mb-5"><span class="text-danger">My</span> Awards</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card">
+                    <div class="card noborder">
                         <div class="card-header">
                             <div class="mt-2">
                                 <h4>Python</h4>
@@ -376,7 +372,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card">
+                    <div class="card noborder">
                         <div class="card-header">
                             <div class="mt-2">
                                 <h4>Web Security</h4>
@@ -394,7 +390,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card">
+                    <div class="card noborder">
                         <div class="card-header">
                             <div class="mt-2">
                                 <h4>AWS</h4>
@@ -413,7 +409,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card">
+                    <div class="card noborder">
                         <div class="card-header">
                             <div class="mt-2">
                                 <h4>Game Project</h4>
@@ -434,6 +430,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card noborder">
+                        <div class="card-header">
+                            <div class="mt-2">
+                                <h4 style="visibility: hidden;">placeholder</h4>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="awards-column">
+                                <a href="assets/awards/stipendi_mark.pdf"><img class="awards-image"
+                                        src="assets/awards/SchoolEndStipendi.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -442,7 +454,8 @@
     <div class="portfolio-background">
         <!-- Game Projects -->
         <section class="section bg-custom-gray" id="portfolio">
-            <h1 class="pb-5 center text-center"><span class="text-darkred">Po</span><span class="text-light">rtfolio</span>
+            <h1 class="pb-5 center text-center"><span class="text-darkred">Po</span><span
+                    class="text-light">rtfolio</span>
             </h1>
 
             <div class="pb-5 pt-5">
@@ -463,7 +476,8 @@
                                             <a class="img-popup" href="https://sidequestvr.com/app/40197/treducare">
                                                 <div class="text-holder">
                                                     <h6 class="title">CHECK OUT</h6>
-                                                    <p class="subtitle">learning and testing your knowledge about wellness technology devices
+                                                    <p class="subtitle">learning and testing your knowledge about
+                                                        wellness technology devices
                                                     </p>
                                                 </div>
                                             </a>
@@ -475,8 +489,10 @@
                                         <span class="tech-box blender">blender</span>
                                     </div>
                                     <p class="desc-text mt-4">
-                                        This was a school project, and the main goal was to create a VR game for learning purposes and for others to learn. <br>
-                                        I was the head developer of the project, making the game mechanics and the player movement and most of the game environment.
+                                        This was a school project, and the main goal was to create a VR game for
+                                        learning purposes and for others to learn. <br>
+                                        I was the head developer of the project, making the game mechanics and the
+                                        player movement and most of the game environment.
                                     </p>
                                 </div>
                             </div>
@@ -489,9 +505,10 @@
         <div class="portfolio-background">
             <!-- Game Projects -- Started But never finished -->
             <section class="section bg-custom-gray" id="portfolio">
-                <h1 class="pb-5 center text-center"><span class="game-color">Pr</span><span class="text-light">ototypes</span>
+                <h1 class="pb-5 center text-center"><span class="game-color">Pr</span><span
+                        class="text-light">ototypes</span>
                 </h1>
-    
+
                 <div class="pb-5 pt-5">
                     <div class="container mt-5">
                         <div class="portfolio">
@@ -499,13 +516,12 @@
                                 <div class="portfolio-item-container">
                                     <div id="portfolio-item">
                                         <div class="portfolio-item" style="border: 1px solid #ccc;">
-                                            <a href="assets/imgs/Game1/game-1.png"
-                                                data-gallery="Game1">
-                                                <img src="assets/imgs/Game1/game-1.png"
-                                                    class="img-fluid">
+                                            <a href="assets/imgs/Game1/game-1.png" data-gallery="Game1">
+                                                <img src="assets/imgs/Game1/game-1.png" class="img-fluid">
                                             </a>
                                             <div class="content-holder">
-                                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/releases/tag/Ver3.0">
+                                                <a class="img-popup"
+                                                    href="https://github.com/RoxareX/Python_Games/releases/tag/Ver3.0">
                                                     <div class="text-holder">
                                                         <h6 class="title">CHECK OUT</h6>
                                                         <p class="subtitle">school project and a working game.
@@ -519,21 +535,22 @@
                                             <span class="tech-box blender">blender</span>
                                         </div>
                                         <p class="desc-text mt-4">
-                                            Very early project that I started in school, I was learning how to make a game and a game engine with a custom particle system. <br>
-                                            I used Pygame to make this game, and I was learning how to make a game engine semi capable of most things<br>    
+                                            Very early project that I started in school, I was learning how to make a
+                                            game and a game engine with a custom particle system. <br>
+                                            I used Pygame to make this game, and I was learning how to make a game
+                                            engine semi capable of most things<br>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="portfolio-item-container">
                                     <div id="portfolio-item">
                                         <div class="portfolio-item" style="border: 1px solid #ccc;">
-                                            <a href="assets/imgs/Game2/game-2.png"
-                                                data-gallery="Game1">
-                                                <img src="assets/imgs/Game2/game-2.png"
-                                                    class="img-fluid">
+                                            <a href="assets/imgs/Game2/game-2.png" data-gallery="Game1">
+                                                <img src="assets/imgs/Game2/game-2.png" class="img-fluid">
                                             </a>
                                             <div class="content-holder">
-                                                <a class="img-popup" href="https://github.com/RoxareX/Python_Games/releases/tag/Platformer">
+                                                <a class="img-popup"
+                                                    href="https://github.com/RoxareX/Python_Games/releases/tag/Platformer">
                                                     <div class="text-holder">
                                                         <h6 class="title">CHECK OUT</h6>
                                                         <p class="subtitle">very early python game.
@@ -546,20 +563,26 @@
                                             <span class="tech-box csharp">python</span>
                                         </div>
                                         <p class="desc-text mt-4">
-                                            This game was made with most of the same engine as the other game, but this time I was learning how to make a platformer game with a custom physics engine. <br>    
+                                            This game was made with most of the same engine as the other game, but this
+                                            time I was learning how to make a platformer game with a custom physics
+                                            engine. <br>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="portfolio-item-container" style="flex-direction: column; justify-content: left;">
-                                    <iframe class="mt-2" width="100%" height="250" src="https://www.youtube.com/embed/inenrFtM8cI" 
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                <div class="portfolio-item-container"
+                                    style="flex-direction: column; justify-content: left;">
+                                    <iframe class="mt-2" width="100%" height="250"
+                                        src="https://www.youtube.com/embed/inenrFtM8cI" title="YouTube video player"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                                         encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                     </iframe>
                                     <div class="tech-boxes mt-2">
                                         <span class="tech-box csharp">c#</span>
                                         <span class="tech-box unity">unity</span>
                                     </div>
-                                    <div class="desc-text">This is a complete character controller that was requested for me to do, while working at <a href="https://virtual-dawn.com" class="game-color">Virtual Dawn</a></div>
+                                    <div class="desc-text">This is a complete character controller that was requested
+                                        for me to do, while working at <a href="https://virtual-dawn.com"
+                                            class="game-color">Virtual Dawn</a></div>
                                 </div>
                             </div>
                         </div>
@@ -567,225 +590,248 @@
                 </div>
             </section>
 
-        <!-- Web Projects -->
-        <section class="section bg-custom-gray" id="web-projects">
-            <div class="pb-5 pt-5">
-                <div class="container mt-5">
-                    <div class="portfolio">
-                        <h2><span class="text-light"><span class="web-color">We</span>b Projects</span></h2>
-                        <span class="line web-line mb-5"></span>
-                        <div class="portfolio-container">
-                            <div class="portfolio-item-container">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/Web1/web-1-Main.png">
-                                        <img src="assets/imgs/Web1/web-1-Main.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://tapahtumat.ticmar23.treok.io">
-                                            <div class="text-holder">
-                                                <h6 class="title">WEB</h6>
-                                                <p class="subtitle">Custom PHP made website from school</p>
-                                            </div>
+            <!-- Web Projects -->
+            <section class="section bg-custom-gray" id="web-projects">
+                <div class="pb-5 pt-5">
+                    <div class="container mt-5">
+                        <div class="portfolio">
+                            <h2><span class="text-light"><span class="web-color">We</span>b Projects</span></h2>
+                            <span class="line web-line mb-5"></span>
+                            <div class="portfolio-container">
+                                <div class="portfolio-item-container">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/Web1/web-1-Main.png">
+                                            <img src="assets/imgs/Web1/web-1-Main.png" class="img-fluid">
                                         </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://tapahtumat.ticmar23.treok.io">
+                                                <div class="text-holder">
+                                                    <h6 class="title">WEB</h6>
+                                                    <p class="subtitle">Custom PHP made website from school</p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-item-container">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/Web2/web-2-Main.png">
-                                        <img src="assets/imgs/Web2/web-2-Main.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://martic22keikkainfo2.node.treok.io">
-                                            <div class="text-holder">
-                                                <h6 class="title">WEB</h6>
-                                                <p class="subtitle">Website for gigs advertising/hosting with login</p>
-                                            </div>
+                                <div class="portfolio-item-container">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/Web2/web-2-Main.png">
+                                            <img src="assets/imgs/Web2/web-2-Main.png" class="img-fluid">
                                         </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://martic22keikkainfo2.node.treok.io">
+                                                <div class="text-holder">
+                                                    <h6 class="title">WEB</h6>
+                                                    <p class="subtitle">Website for gigs advertising/hosting with login
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-item-container">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/Web3/web-3-Main.png">
-                                        <img src="assets/imgs/Web3/web-3-Main.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://roxarex.github.io/dist/index">
-                                            <div class="text-holder">
-                                                <h6 class="title">WEB</h6>
-                                                <p class="subtitle">Website for making a shop cart system</p>
-                                            </div>
+                                <div class="portfolio-item-container">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/Web3/web-3-Main.png">
+                                            <img src="assets/imgs/Web3/web-3-Main.png" class="img-fluid">
                                         </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://roxarex.github.io/dist/index">
+                                                <div class="text-holder">
+                                                    <h6 class="title">WEB</h6>
+                                                    <p class="subtitle">Website for making a shop cart system</p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-item-container">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/Web4/web-4-Main.png">
-                                        <img src="assets/imgs/Web4/web-4-Main.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="http://localhost:8888/calculate/calculate.html">
-                                            <div class="text-holder">
-                                                <h6 class="title">WEB</h6>
-                                                <p class="subtitle">An updated version of the WoodCalculator app</p>
-                                            </div>
+                                <div class="portfolio-item-container">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/Web4/web-4-Main.png">
+                                            <img src="assets/imgs/Web4/web-4-Main.png" class="img-fluid">
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- App Projects -->
-        <section class="section bg-custom-gray" id="app-projects">
-            <div class="pb-5 pt-5">
-                <div class="container mt-5">
-                    <div class="portfolio">
-                        <h2><span class="text-light"><span class="app-color">Ap</span>p Projects</span></h2>
-                        <span class="line app-line mb-5"></span>
-                        <div class="portfolio-container">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/App1/app-1.png">
-                                        <img src="assets/imgs/App1/app-1.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
-                                            <div class="text-holder">
-                                                <h6 class="title">APPS</h6>
-                                                <p class="subtitle">Made it for my brother</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/App1/app-1-2.png">
-                                        <img src="assets/imgs/App1/app-1-2.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
-                                            <div class="text-holder">
-                                                <h6 class="title">APPS</h6>
-                                                <p class="subtitle">Made it for my brother</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/App1/app-1-3.png">
-                                        <img src="assets/imgs/App1/app-1-3.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
-                                            <div class="text-holder">
-                                                <h6 class="title">APPS</h6>
-                                                <p class="subtitle">Made it for my brother</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="portfolio-item">
-                                    <a href="assets/imgs/App1/app-1-4.png">
-                                        <img src="assets/imgs/App1/app-1-4.png" class="img-fluid">
-                                    </a>
-                                    <div class="content-holder">
-                                        <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
-                                            <div class="text-holder">
-                                                <h6 class="title">APPS</h6>
-                                                <p class="subtitle">Made it for my brother</p>
-                                            </div>
-                                        </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="http://localhost:8888/calculate/calculate.html">
+                                                <div class="text-holder">
+                                                    <h6 class="title">WEB</h6>
+                                                    <p class="subtitle">An updated version of the WoodCalculator app</p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <!-- End of portfolio section -->
+            </section>
 
-
-    <div class="section contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span>
-                                </h6>
+            <!-- App Projects -->
+            <section class="section bg-custom-gray" id="app-projects">
+                <div class="pb-5 pt-5">
+                    <div class="container mt-5">
+                        <div class="portfolio">
+                            <h2><span class="text-light"><span class="app-color">Ap</span>p Projects</span></h2>
+                            <span class="line app-line mb-5"></span>
+                            <div class="portfolio-container">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/App1/app-1.png">
+                                            <img src="assets/imgs/App1/app-1.png" class="img-fluid">
+                                        </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                                <div class="text-holder">
+                                                    <h6 class="title">APPS</h6>
+                                                    <p class="subtitle">Made it for my brother</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/App1/app-1-2.png">
+                                            <img src="assets/imgs/App1/app-1-2.png" class="img-fluid">
+                                        </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                                <div class="text-holder">
+                                                    <h6 class="title">APPS</h6>
+                                                    <p class="subtitle">Made it for my brother</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/App1/app-1-3.png">
+                                            <img src="assets/imgs/App1/app-1-3.png" class="img-fluid">
+                                        </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                                <div class="text-holder">
+                                                    <h6 class="title">APPS</h6>
+                                                    <p class="subtitle">Made it for my brother</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="portfolio-item">
+                                        <a href="assets/imgs/App1/app-1-4.png">
+                                            <img src="assets/imgs/App1/app-1-4.png" class="img-fluid">
+                                        </a>
+                                        <div class="content-holder">
+                                            <a class="img-popup" href="https://github.com/RoxareX/WoodCalculator">
+                                                <div class="text-holder">
+                                                    <h6 class="title">APPS</h6>
+                                                    <p class="subtitle">Made it for my brother</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">ticzermark@gmail.com</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark"
-                                    href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark"
-                                    href="https://github.com/RoxareX"><i class="fa fa-github"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark"
-                                    href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i class="fa fa-linkedin"
-                                        aria-hidden="true"></i></a></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
+            <!-- 3D Models -->
+            <section class="section bg-custom-gray" id="3dmodels">
+                <div class="pb-5 pt-5">
+                    <div class="container mt-5">
+                        <div class="portfolio">
+                            <h2><span class="text-light"><span class="game-color">3D</span> Models</span></h2>
+                            <span class="line game-line mb-5"></span>
+                            <div class="portfolio-container">
+                                <a style="font-size: 36px; color: lightblue; border-radius: 5px; border: 1px solid #ccc; padding: 10px 15px; margin-top: 50px;"
+                                    href="/3dmodels.html">
+                                    View my 3d models here
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <a href="http://roxarex.github.io" target="_blank"><span
-                        class="text-danger" title="Still my webiste :D">Mark Ticzer</span></a>
-            </p>
+        <!-- End of portfolio section -->
+
+
+        <div class="section contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="contact-info-card">
+                            <h4 class="contact-title">Get in touch</h4>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-mobile icon-md"></i>
+                                </div>
+                                <div class="col-10 ">
+                                    <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-envelope icon-md"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="d-inline">Email :<br> <span
+                                            class="text-muted">ticzermark@gmail.com</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <ul class="social-icons pt-4">
+                                <li class="social-item"><a class="social-link text-dark"
+                                        href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark"
+                                        href="https://github.com/RoxareX"><i class="fa fa-github"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark"
+                                        href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i
+                                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </footer>
+        <footer class="footer py-3">
+            <div class="container">
+                <p class="small mb-0 text-light">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Created With <i
+                        class="ti-heart text-danger"></i> By <a href="http://roxarex.github.io" target="_blank"><span
+                            class="text-danger" title="Still my webiste :D">Mark Ticzer</span></a>
+                </p>
+            </div>
+        </footer>
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        <!-- core  -->
+        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+        <!-- bootstrap 3 affix -->
+        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+        <!-- Isotope  -->
+        <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-    <!-- Google mpas -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+        <!-- Google mpas -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
+        <!-- JohnDoe js -->
+        <script src="assets/js/johndoe.js"></script>
+
+        <!-- Loaders js -->
+        <script src="assets/js/loaders.js"></script>
 
 </body>
 

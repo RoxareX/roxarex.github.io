@@ -127,6 +127,10 @@ body {
     background-color: white; /* Set a fixed background color for the contacts section */
 }
 
+.noborder {
+    border: none;
+}
+
 @media screen and (max-width: 1200px) {
     
     .awards-image-container {
