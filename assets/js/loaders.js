@@ -77,6 +77,58 @@ function loadArtStationPortfolio() {
         }
     }
     
+    function handleCloudflareImages(container) {
+        // Handle images with data-cfsrc (Cloudflare lazy loading)
+        const cfImages = container.querySelectorAll('img[data-cfsrc]');
+        cfImages.forEach(img => {
+            const cfSrc = img.getAttribute('data-cfsrc');
+            if (cfSrc) {
+                img.setAttribute('src', cfSrc);
+                img.style.display = '';
+                img.style.visibility = 'visible';
+                console.log(`Fixed Cloudflare image: ${cfSrc}`);
+            }
+        });
+        
+        // Extract images from noscript tags (fallback for disabled JS)
+        const noscriptTags = container.querySelectorAll('noscript');
+        noscriptTags.forEach(noscript => {
+            const noscriptHTML = noscript.innerHTML;
+            if (noscriptHTML.includes('<img')) {
+                // Parse the noscript content
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = noscriptHTML;
+                const noscriptImg = tempDiv.querySelector('img');
+                
+                if (noscriptImg && noscriptImg.src) {
+                    // Find the corresponding broken image and replace it
+                    const parentElement = noscript.parentElement;
+                    const brokenImg = parentElement.querySelector('img[data-cfsrc], img[style*="display:none"]');
+                    
+                    if (brokenImg) {
+                        brokenImg.src = noscriptImg.src;
+                        brokenImg.style.display = '';
+                        brokenImg.style.visibility = 'visible';
+                        brokenImg.removeAttribute('data-cfsrc');
+                        console.log(`Fixed image from noscript: ${noscriptImg.src}`);
+                    }
+                }
+            }
+        });
+        
+        // Remove Cloudflare scripts that might interfere
+        const cfScripts = container.querySelectorAll('script[src*="cloudflare"], script[src*="mirage"]');
+        cfScripts.forEach(script => script.remove());
+        
+        // Remove inline Cloudflare scripts
+        const inlineScripts = container.querySelectorAll('script[type="text/javascript"]');
+        inlineScripts.forEach(script => {
+            if (script.textContent.includes('__mirage') || script.textContent.includes('cloudflare')) {
+                script.remove();
+            }
+        });
+    }
+    
     function insertPortfolioContent(content) {
         const portfolioSection = document.querySelector('#portfolio');
         if (portfolioSection) {
@@ -108,6 +160,9 @@ function loadArtStationPortfolio() {
                     console.log(`Fixed image URL: ${src} -> ${absoluteUrl}`);
                 }
             });
+            
+            // Handle Cloudflare lazy loading and mobile view issues
+            handleCloudflareImages(artStationContainer);
             
             // Insert after the portfolio title
             const portfolioTitle = portfolioSection.querySelector('h1');
