@@ -163,7 +163,13 @@ function loadArtStationPortfolio() {
             
             // Handle Cloudflare lazy loading and mobile view issues
             handleCloudflareImages(artStationContainer);
-            
+
+            // Remove any existing placeholder text
+            const placeholder = document.getElementById('portfolio-placeholder');
+            if (placeholder) {
+                placeholder.remove();
+            }
+
             // Insert after the portfolio title
             const portfolioTitle = portfolioSection.querySelector('h1');
             if (portfolioTitle && portfolioTitle.nextSibling) {
