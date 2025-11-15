@@ -92,6 +92,7 @@ body {
 .portfolio-background {
     background-color: black; /* Default color */
     transition: background-color 1.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Slower and smoother transition */
+    padding-top: 50px;
 }
 
 .title-line {

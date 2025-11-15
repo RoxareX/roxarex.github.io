@@ -10,9 +10,9 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
-    <link rel="stylesheet" href="assets/css/johndoe.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/artstation.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .fa-github {
@@ -78,155 +78,119 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<!-- <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <a href="calculate/calculate.html" class="btn btn-primary btn-component affix" data-offset-top="600"><i
-            class="ti-shift-left-alt"></i> Calculator</a>
+            class="ti-shift-left-alt"></i> Calculator</a> -->
 
-    <!--Navigation-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white affix" data-offset-top="510">
-        <div class="container" id="navbar-container"></div>
-    </nav>
+<!--Navigation-->
+<header id="navbar"></header>
+<!-- Filter Section -->
+<div class="portfolio-background">
+    <div class="container">
+        <div class="text-center">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="showProjects()">3D Projects</button>
+                <div style="width: 1px; border: #007bff solid 1px;"></div>
+                <button class="filter-btn" onclick="showModels()">3D Models</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Projects Section -->
+    <section class="section" id="portfolio">
+        <h2 id="portfolio-placeholder" class="text-center pb-5 pt-5 text-light">Loading ArtStation Portfolio...</h2>
+        <!-- artstation imported content appears here -->
 
+    </section>
+    <!-- End of portfolio section -->
 
-    <!-- Filter Section -->
-    <div class="portfolio-background">
+    <!-- 3D Models Section -->
+    <section class="section" id="3dmodels" style="display: none;">
         <div class="container">
-            <div class="text-center">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="showProjects()">3D Projects</button>
-                    <div style="width: 1px; border: #007bff solid 1px;"></div>
-                    <button class="filter-btn" onclick="showModels()">3D Models</button>
-                </div>
+            <h2 class="text-center mb-5 pt-5 text-light">3D Models</h2>
+            <!-- 3D models content will go here -->
+            <div class="col-12" style="place-items: center; padding-bottom: 50px;">
+                <p style="font-size: 20px;" class="text-center text-muted">3D Models view isn't available yet - View
+                    all my models here
+                    instead</p>
+                <a class="sketchfab-link" href="https://sketchfab.com/RoxareX">View all my models on Sketchfab</a>
             </div>
         </div>
+    </section>
+    <!-- End of 3D models section -->
 
-        <!-- Projects Section -->
-        <section class="section" id="portfolio">
-            <h2 id="portfolio-placeholder" class="text-center pb-5 pt-5 text-light">Loading ArtStation Portfolio...</h2>
-            <!-- artstation imported content appears here -->
+    <footer id="footer" class="footer"></footer>
 
-        </section>
-        <!-- End of portfolio section -->
+    <!-- Loaders JS -->
+    <script src="assets/js/loaders.js"></script>
 
-        <!-- 3D Models Section -->
-        <section class="section" id="3dmodels" style="display: none;">
-            <div class="container">
-                <h2 class="text-center mb-5 pt-5 text-light">3D Models</h2>
-                <!-- 3D models content will go here -->
-                <div class="col-12" style="place-items: center; padding-bottom: 50px;">
-                    <p style="font-size: 20px;" class="text-center text-muted">3D Models view isn't available yet - View
-                        all my models here
-                        instead</p>
-                    <a class="sketchfab-link" href="https://sketchfab.com/RoxareX">View all my models on Sketchfab</a>
-                </div>
-            </div>
-        </section>
-        <!-- End of 3D models section -->
+    <!-- Filter functionality -->
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
 
-
-        <div class="section contact" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="contact-info-card">
-                            <h4 class="contact-title">Get in touch</h4>
-                            <div class="row mb-2">
-                                <div class="col-1 pt-1 mr-1">
-                                    <i class="ti-mobile icon-md"></i>
-                                </div>
-                                <div class="col-10 ">
-                                    <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (358) 45 6423355</span>
-                                    </h6>
-                                </div>
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-1 pt-1 mr-1">
-                                    <i class="ti-envelope icon-md"></i>
-                                </div>
-                                <div class="col-10">
-                                    <h6 class="d-inline">Email :<br> <span
-                                            class="text-muted">ticzermark@gmail.com</span>
-                                    </h6>
-                                </div>
-                            </div>
-                            <ul class="social-icons pt-4">
-                                <li class="social-item"><a class="social-link text-dark"
-                                        href="https://www.instagram.com/ticzer_mark/"><i class="ti-instagram"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a class="social-link text-dark"
-                                        href="https://github.com/RoxareX"><i class="fa fa-github"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a class="social-link text-dark"
-                                        href="https://www.linkedin.com/in/márk-ticzer-99628427b/"><i
-                                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <footer class="footer py-3">
-            <div class="container">
-                <p class="small mb-0 text-light">
-                    &copy;
-                    <script>document.write(new Date().getFullYear())</script> Created With <i
-                        class="ti-heart text-danger"></i> By <a href="http://roxarex.github.io" target="_blank"><span
-                            class="text-danger" title="Still my webiste :D">Mark Ticzer</span></a>
-                </p>
-            </div>
-        </footer>
-
-        <!-- core  -->
-        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-        <!-- bootstrap 3 affix -->
-        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-        <!-- Isotope  -->
-        <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-        <!-- Google mpas -->
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-        <!-- JohnDoe js -->
-        <script src="assets/js/johndoe.js"></script>
-
-        <!-- Loaders JS -->
-        <script src="assets/js/loaders.js"></script>
-
-        <!-- Filter functionality -->
-        <script>
-            function showProjects() {
-                // Show portfolio section
-                document.getElementById('portfolio').style.display = 'block';
-                // Hide 3D models section
-                document.getElementById('3dmodels').style.display = 'none';
-
-                // Update button states
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    btn.classList.remove('active');
+                // ensure scripts inside header.html run
+                document.querySelectorAll("#navbar script").forEach(script => {
+                    const newScript = document.createElement("script");
+                    newScript.text = script.textContent;
+                    document.body.appendChild(newScript);
+                    script.remove();
                 });
-                event.target.classList.add('active');
-            }
+            });
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
 
-            function showModels() {
-                // Hide portfolio section
-                document.getElementById('portfolio').style.display = 'none';
-                // Show 3D models section
-                document.getElementById('3dmodels').style.display = 'block';
-
-                // Update button states
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    btn.classList.remove('active');
+                // ensure scripts inside header.html run
+                document.querySelectorAll("#footer script").forEach(script => {
+                    const newScript = document.createElement("script");
+                    newScript.text = script.textContent;
+                    document.body.appendChild(newScript);
+                    script.remove();
                 });
-                event.target.classList.add('active');
-            }
-        </script>
+            })
+            .then(x => {
+                document.getElementById("copyDate").innerHTML = new Date().getFullYear();
+            })
+    </script>
+    <script src="script.js"></script>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
 
-</body>
+                // ensure scripts inside header.html run
+                document.querySelectorAll("#navbar script").forEach(script => {
+                    const newScript = document.createElement("script");
+                    newScript.text = script.textContent;
+                    document.body.appendChild(newScript);
+                    script.remove();
+                });
+            });
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+
+                // ensure scripts inside header.html run
+                document.querySelectorAll("#footer script").forEach(script => {
+                    const newScript = document.createElement("script");
+                    newScript.text = script.textContent;
+                    document.body.appendChild(newScript);
+                    script.remove();
+                });
+            });
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"99ee98077f92d4fd","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"e72945439c264b3b85d2e3b689102d27"}'
+        crossorigin="anonymous"></script>
+
+    </body>
 
 </html>
