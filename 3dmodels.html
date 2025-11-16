@@ -98,7 +98,7 @@
 
     <!-- Projects Section -->
     <section class="section" id="portfolio">
-        <h2 id="portfolio-placeholder" class="text-center pb-5 pt-5 text-light">Loading ArtStation Portfolio...</h2>
+        <h2 id="portfolio-placeholder" class="text-center">Loading ArtStation Portfolio...</h2>
         <!-- artstation imported content appears here -->
 
     </section>
@@ -107,9 +107,9 @@
     <!-- 3D Models Section -->
     <section class="section" id="3dmodels" style="display: none;">
         <div class="container">
-            <h2 class="text-center mb-5 pt-5 text-light">3D Models</h2>
+            <h2 class="text-center">3D Models</h2>
             <!-- 3D models content will go here -->
-            <div class="col-12" style="place-items: center; padding-bottom: 50px;">
+            <div style="place-items: center; padding-bottom: 50px; display: flex; flex-direction: column;">
                 <p style="font-size: 20px;" class="text-center text-muted">3D Models view isn't available yet - View
                     all my models here
                     instead</p>
@@ -125,6 +125,33 @@
     <script src="assets/js/loaders.js"></script>
 
     <!-- Filter functionality -->
+    <script>
+        function showProjects() {
+            // Show portfolio section
+            document.getElementById('portfolio').style.display = 'block';
+            // Hide 3D models section
+            document.getElementById('3dmodels').style.display = 'none';
+
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        function showModels() {
+            // Hide portfolio section
+            document.getElementById('portfolio').style.display = 'none';
+            // Show 3D models section
+            document.getElementById('3dmodels').style.display = 'block';
+
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
     <script>
         fetch("header.html")
             .then(response => response.text())
@@ -183,6 +210,9 @@
                     document.body.appendChild(newScript);
                     script.remove();
                 });
+            })
+            .then(x => {
+                document.getElementById("copyDate").innerHTML = new Date().getFullYear();
             });
     </script>
     <script defer

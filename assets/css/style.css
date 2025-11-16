@@ -570,6 +570,34 @@ body {
     border: 3px solid var(--accent-color);
     border-radius: 50%;
 }
+
+@keyframes color {
+  0%   { background: #00F0FF }   /* cyan */
+  20%  { background: #00C5FF }   /* light cyan-blue */
+  40%  { background: #008FFF }   /* bright blue */
+  60%  { background: #006BFF }   /* deeper blue */
+  80%  { background: #004BFF }   /* dark rich blue */
+  100% { background: #00F0FF }   /* back to cyan */
+}
+
+.active-year-badge{
+    background: linear-gradient(135deg, var(--accent-secondary-color), var(--secondary-color));
+    animation: color 9s infinite linear;
+}
+.active-year-badge::after{
+    border: 3px solid #008FFF !important;
+}
+.active-experience-content:hover{
+    border-color: #008FFF;
+}
+.active-experience-content h4 {
+    color: #004BFF !important;
+}
+.active-detail-item svg{
+    color: #008FFF !important;
+}
+
+
 .experience-detail-item {
     display: flex;
     align-items: center;
@@ -1029,6 +1057,13 @@ body {
 }
 .button-3d span:nth-child(4) {
   transform: rotateX(90deg) translateZ(50px);
+}
+
+/* 3D models view */
+.text-center {
+    color: white;
+    padding-top: 50px;
+    text-align: center;
 }
 
 /* Responsive Design */
